@@ -1,0 +1,79 @@
+//created for understanding DOM operations 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+        .bg-black {
+            background-color: black;
+            color: white;
+            padding: 20px;
+        }
+        
+    </style>
+</head>
+<body class ="bg-black">
+     <div class="parent">
+        
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">wednesday</div>
+        <div class="day">thursday</div>
+
+    </div>
+    <ul class="language">
+        <li>adbcs</li>
+    </ul>
+</body>
+<script>
+     function addlanguage(lang)
+     {
+        const li= document.createElement('li');
+        li.innerHTML=`${lang}`
+        document.querySelector('.language').appendChild(li);
+     }
+     addlanguage('JavaScript');
+    addoption("Python");
+    addoption("Java");
+
+     function addoption(lang)
+     {
+        const li=document.createElement('li');
+        li.appendChild(document.createTextNode(lang));
+        document.querySelector('.language').appendChild(li);
+     }
+     
+
+    const c= document.querySelector("li:nth-child(2)")
+    //c.innerHTML="C++";
+    const n=document.createElement('li');
+    n.textContent="car";
+    c.replaceWith(n);
+
+    const first=document.querySelector('.language li:first-child');
+    first.outerHTML='<li>JAva</li>';
+    
+    const div=document.createElement('div');
+    console.log(div);
+    div.className='parent';
+    const t = document.createTextNode('This is a parent di');
+    div.appendChild(t);
+    document.body.appendChild(div);
+    
+    const days = document.querySelectorAll('.day');
+    days.forEach(day => {
+        day.addEventListener('click', () => {
+            alert(`You clicked on ${day.textContent}`);
+            day.style.backgroundColor='blue';
+            day.style.color='white';
+        });
+    });
+</script>
+</html> 
