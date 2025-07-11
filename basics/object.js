@@ -15,10 +15,10 @@ const JsUser = {
     lastLoginDays: ["Monday", "sunday"]
 }
 
-// console.log(JsUser.email)
-// console.log(JsUser["email"])
-// console.log(JsUser["full name"])
-// console.log(JsUser[mySym])
+console.log(JsUser.email)
+console.log(JsUser["email"])
+console.log(JsUser["full name"])
+console.log(JsUser[mySym])
 
 JsUser.email = "mallik@gmail.com"
 // Object.freeze(JsUser)

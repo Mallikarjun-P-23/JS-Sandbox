@@ -9,11 +9,11 @@ const user = {
 
 }
 
-// user.welcomeMessage()
-// user.username = "sam"
-// user.welcomeMessage()
+user.welcomeMessage()
+user.username = "sam"
+user.welcomeMessage()
 
-// console.log(this);
+console.log(this);
 
 
 const chai =  () => {
@@ -21,8 +21,6 @@ const chai =  () => {
     console.log(this);
 }
 
-
-// chai()
 
 // const addTwo = (num1, num2) => {
 //     return num1 + num2

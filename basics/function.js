@@ -8,12 +8,12 @@ function sayMyName(){
     console.log("H");
 }
 
-// sayMyName()
+sayMyName()
 
-// function addTwoNumbers(number1, number2){
+function addTwoNumbers(number1, number2){
 
-//     console.log(number1 + number2);
-// }
+    console.log(number1 + number2);
+}
 
 function addTwoNumbers(number1, number2){
 
@@ -32,9 +32,6 @@ function loginUserMessage(un = "sam"){
     }
     return `${un} just logged in`
 }
-
-// console.log(loginUserMessage("hitesh"))
-// console.log(loginUserMessage("hitesh"))
 
 
 function calculateCartPrice(val1, val2, ...num1){
