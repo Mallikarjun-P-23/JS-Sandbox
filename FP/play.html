@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="play.css">
+     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<style>
+
+    
+</style>
+<body>
+    <header class ="header">
+        <div class="logo">
+            <div class="logo-icon">
+                <i class="fas fa-music"></i>
+            </div>
+            <h1 class ="logo-text">My Play</h1>
+        </div>
+        <div class ="header-actions">
+            <button class="header-btn">
+                <i class ="fas fa-download"></i>
+            </button>
+            <div class ="user-avatar">M</div>
+        </div>
+    </header>
+
+   <main class ="main-content">
+        <section class ="welcome-section">
+            <h2 class ="welcome-title">Welcome </h2>
+            <p class ="welcome-subtitle">Ready to dive into your music?</p>
+        </section>
+ 
+        <section class ="scrollable-section">
+            <div class="action-card blue" data-action="library">
+                <div class="action-icon blue">
+                    <i class="fas fa-music"></i>
+                </div>
+                <h3 class="action-title">My Library</h3>
+                <p class="action-subtitle">Browse your music collection</p>
+            </div>
+
+            <div class="action-card green" data-action="playlists">
+                <div class="action-icon green">
+                    <i class="fas fa-list"></i>
+                </div>
+                <h3 class="action-title">Playlists</h3>
+                <p class="action-subtitle">Create and manage playlists</p>
+            </div>
+            
+            <div class="action-card purple" data-action="settings">
+                <div class="action-icon purple">
+                    <i class="fas fa-cog"></i>
+                </div>
+                <h3 class="action-title">Settings</h3>
+                <p class="action-subtitle">Customize your experience</p>
+            </div>
+        </section>
+        
+        <section >
+             <div class="section-header">
+                <h2 class="section-title">Recently Played</h2>
+                <a href="#" class="view-all-btn">View All</a>
+            </div>
+
+            <div class="scrollable-section">
+                <div class="music-card" data-track="chill-vibes">
+                    <div class="music-card-image gradient-1">
+                        <i class="fas fa-music"></i>
+                    </div>
+                    <h3 class="music-card-title">Chill Vibes</h3>
+                    <p class="music-card-info">Playlist • 24 songs</p>
+                </div>
+                <div class="music-card" data-track="rock-classics">
+                    <div class="music-card-image gradient-2">
+                        <i class="fas fa-guitar"></i>
+                    </div>
+                    <h3 class="music-card-title">Rock Classics</h3>
+                    <p class="music-card-info">Album • 12 tracks</p>
+                </div>
+
+                <div class="music-card" data-track="pop-hits">
+                    <div class="music-card-image gradient-3">
+                        <i class="fas fa-headphones"></i>
+                    </div>
+                    <h3 class="music-card-title">Pop Hits</h3>
+                    <p class="music-card-info">Playlist • 18 songs</p>
+                </div>
+
+                <div class="music-card" data-track="jazz-lounge">
+                    <div class="music-card-image gradient-4">
+                        <i class="fas fa-microphone"></i>
+                    </div>
+                    <h3 class="music-card-title">Jazz Lounge</h3>
+                    <p class="music-card-info">Album • 8 tracks</p>
+                </div>
+            </div>
+        </section>
+
+         <section class="scrollable-section1">
+            <div class="stat-card">
+                <div class="stat-value blue">847</div>
+                <div class="stat-label">Total Tracks</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value green">23h</div>
+                <div class="stat-label">Hours Played</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value purple">12</div>
+                <div class="stat-label">Playlists</div>
+            </div>
+        </section>
+   </main>
+     <div class="bottom-player">
+        <div class="player-content">
+            <div class="current-track">
+                <div class="track-image">
+                    <i class="fas fa-music"></i>
+                </div>
+                <div class="track-info">
+                    <div class="track-info-title">Currently Playing</div>
+                    <div class="track-info-subtitle" id="current-track-name">Select a track to start</div>
+                </div>
+            </div>
+
+            <div class="player-controls">
+                <button class="control-btn" id="prev-btn">
+                    <i class="fas fa-step-backward"></i>
+                </button>
+                <button class="play-btn" id="play-btn">
+                    <i class="fas fa-play" id="play-icon"></i>
+                </button>
+                <button class="control-btn" id="next-btn">
+                    <i class="fas fa-step-forward"></i>
+                </button>
+            </div>
+
+            <div class="volume-control">
+                <i class="fas fa-volume-up"></i>
+                <div class="volume-bar" id="volume-bar">
+                    <div class="volume-progress" id="volume-progress"></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+ <script src="play.js"></script>
+</body>
+</html>
